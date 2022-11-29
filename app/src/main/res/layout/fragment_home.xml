@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/all_notes"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/filter_btn"
+                android:padding="4dp"
+                android:layout_margin="5dp"
+                android:src = "@drawable/ic_baseline_filter_list_24"/>
+
+            <TextView
+                android:id="@+id/high_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"
+                android:fontFamily="@font/amaranth"
+                android:background="@drawable/filter_btn"
+                android:layout_margin="5dp"
+                android:paddingStart="27dp"
+                android:paddingEnd="27dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textSize="18sp"
+                android:textColor="@color/orange_color"/>
+
+            <TextView
+                android:id="@+id/medium_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:fontFamily="@font/amaranth"
+                android:background="@drawable/filter_btn"
+                android:layout_margin="5dp"
+                android:paddingStart="27dp"
+                android:paddingEnd="27dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textSize="18sp"
+                android:textColor="@color/yellow_color"/>
+
+            <TextView
+                android:id="@+id/low_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low"
+                android:fontFamily="@font/amaranth"
+                android:background="@drawable/filter_btn"
+                android:layout_margin="5dp"
+                android:paddingStart="27dp"
+                android:paddingEnd="27dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textSize="18sp"
+                android:textColor="@color/green_color"/>
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allNotesRv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/orange_color"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
