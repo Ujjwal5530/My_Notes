@@ -13,11 +13,11 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="8dp"
             android:gravity="center_vertical"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -27,56 +27,55 @@
                 android:id="@+id/all_notes"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/filter_btn"
                 android:padding="4dp"
-                android:layout_margin="5dp"
-                android:src = "@drawable/ic_baseline_filter_list_24"/>
+                android:src="@drawable/ic_baseline_filter_list_24" />
 
             <TextView
                 android:id="@+id/high_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="High"
-                android:fontFamily="@font/amaranth"
-                android:background="@drawable/filter_btn"
                 android:layout_margin="5dp"
+                android:background="@drawable/filter_btn"
+                android:fontFamily="@font/amaranth"
                 android:paddingStart="27dp"
-                android:paddingEnd="27dp"
                 android:paddingTop="7dp"
+                android:paddingEnd="27dp"
                 android:paddingBottom="7dp"
-                android:textSize="18sp"
-                android:textColor="@color/orange_color"/>
+                android:text="High"
+                android:textColor="@color/orange_color"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/medium_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Medium"
-                android:fontFamily="@font/amaranth"
-                android:background="@drawable/filter_btn"
                 android:layout_margin="5dp"
+                android:background="@drawable/filter_btn"
+                android:fontFamily="@font/amaranth"
                 android:paddingStart="27dp"
-                android:paddingEnd="27dp"
                 android:paddingTop="7dp"
+                android:paddingEnd="27dp"
                 android:paddingBottom="7dp"
-                android:textSize="18sp"
-                android:textColor="@color/yellow_color"/>
+                android:text="Medium"
+                android:textColor="@color/yellow_color"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/low_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Low"
-                android:fontFamily="@font/amaranth"
-                android:background="@drawable/filter_btn"
                 android:layout_margin="5dp"
+                android:background="@drawable/filter_btn"
+                android:fontFamily="@font/amaranth"
                 android:paddingStart="27dp"
-                android:paddingEnd="27dp"
                 android:paddingTop="7dp"
+                android:paddingEnd="27dp"
                 android:paddingBottom="7dp"
-                android:textSize="18sp"
-                android:textColor="@color/green_color"/>
-
+                android:text="Low"
+                android:textColor="@color/green_color"
+                android:textSize="18sp" />
 
 
         </LinearLayout>

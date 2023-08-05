@@ -29,7 +29,7 @@ class NotesAdapter(private val context: Context, private var notesList : List<No
         val notes = notesList[position]
 
         holder.binding.title.text = notes.title
-        holder.binding.subTitle.text = notes.subTitle
+        holder.binding.notes.text = notes.notes
         holder.binding.date.text = notes.date
 
         when(notes.priority){

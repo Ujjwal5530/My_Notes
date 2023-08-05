@@ -17,53 +17,41 @@
             android:id="@+id/editTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:textColor="#D1D1D1"
             android:background="@drawable/edit_text"
             android:fontFamily="@font/amaranth_italic"
             android:hint="Title..."
             android:maxLines="1"
-            android:padding="15dp"
-            android:textColorHint="#D1D1D1" />
-
-        <EditText
-            android:id="@+id/editSubtitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edit_text"
-            android:fontFamily="@font/amaranth_italic"
-            android:hint="SubTitle..."
-            android:textColor="#D1D1D1"
-            android:maxLines="1"
-            android:padding="15dp"
+            android:padding="13dp"
             android:textColorHint="#D1D1D1" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/pGreen"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/green_dot"/>
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/green_dot" />
 
             <ImageView
                 android:id="@+id/pYellow"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="20dp"
-                android:background="@drawable/yellow_dot"/>
+                android:background="@drawable/yellow_dot" />
 
             <ImageView
                 android:id="@+id/pOrange"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="20dp"
-                android:background="@drawable/orange_dot"/>
+                android:background="@drawable/orange_dot" />
 
         </LinearLayout>
 
@@ -71,13 +59,13 @@
             android:id="@+id/editNotes"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:gravity="start"
             android:textColor="#D1D1D1"
             android:background="@drawable/edit_text"
             android:fontFamily="@font/amaranth_italic"
             android:hint="Notes..."
-            android:padding="15dp"
+            android:padding="13dp"
             android:textColorHint="#D1D1D1" />
 
     </LinearLayout>

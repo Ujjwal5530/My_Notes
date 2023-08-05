@@ -13,8 +13,6 @@ data class Notes (
     var id : Int?,
     @ColumnInfo(name = "Title")
     var title : String?,
-    @ColumnInfo(name = "SubTitle")
-    var subTitle : String?,
     @ColumnInfo(name = "Notes")
     var notes : String?,
     @ColumnInfo(name = "Date")
@@ -27,7 +25,6 @@ data class Notes (
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
-        parcel.readString(),
         parcel.readString()
     ) {
     }
@@ -35,7 +32,6 @@ data class Notes (
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeValue(id)
         parcel.writeString(title)
-        parcel.writeString(subTitle)
         parcel.writeString(notes)
         parcel.writeString(date)
         parcel.writeString(priority)

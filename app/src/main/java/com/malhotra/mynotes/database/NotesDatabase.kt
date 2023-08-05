@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.malhotra.mynotes.dao.NotesDao
 import com.malhotra.mynotes.model.Notes
 
-@Database(entities = [Notes :: class], version = 1, exportSchema = false)
+@Database(entities = [Notes :: class], version = 2, exportSchema = false)
 abstract class NotesDatabase : RoomDatabase() {
     abstract fun notesDao() : NotesDao
 
@@ -24,6 +24,7 @@ abstract class NotesDatabase : RoomDatabase() {
             synchronized(this){
                 val roomDatabase = Room
                     .databaseBuilder(context, NotesDatabase::class.java, "Notes")
+                    .fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = roomDatabase
                 return roomDatabase

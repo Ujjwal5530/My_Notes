@@ -67,11 +67,10 @@ class CreateNotesFragment : Fragment() {
 
     private fun createNotes(it: View?) {
         val title = binding.editTitle.text.toString()
-        val subTitle = binding.editSubtitle.text.toString()
         val notes = binding.editNotes.text.toString()
         val d = Date()
         val date = DateFormat.format("MMMM d, yyyy ", d.time)
-        val notesData = Notes(null, title, subTitle, notes, date.toString(), priority)
+        val notesData = Notes(null, title, notes, date.toString(), priority)
         viewModel.insertNotes(notesData)
 
         Navigation.findNavController(it!!)

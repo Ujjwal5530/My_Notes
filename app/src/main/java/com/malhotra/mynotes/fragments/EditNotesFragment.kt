@@ -36,7 +36,6 @@ class EditNotesFragment : Fragment() {
         setHasOptionsMenu(true)
 
         binding.editTitle.setText(notes.notes.title)
-        binding.editSubtitle.setText(notes.notes.subTitle)
         binding.editNotes.setText(notes.notes.notes)
 
         when(notes.notes.priority){
@@ -93,11 +92,10 @@ class EditNotesFragment : Fragment() {
 
     private fun updateNotes(it: View?) {
         val title = binding.editTitle.text.toString()
-        val subTitle = binding.editSubtitle.text.toString()
         val note = binding.editNotes.text.toString()
         val d = Date()
         val date = DateFormat.format("MMMM d, yyyy ", d.time)
-        val notesData = Notes(notes.notes.id, title, subTitle, note, date.toString(), priority)
+        val notesData = Notes(notes.notes.id, title, note, date.toString(), priority)
         viewModel.updateNotes(notesData)
 
         Navigation.findNavController(it!!).navigate(R.id.action_editNotesFragment_to_homeFragment)

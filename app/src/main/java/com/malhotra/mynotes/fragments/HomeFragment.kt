@@ -121,7 +121,7 @@ class HomeFragment : Fragment() {
 
         for (i in oldNotes){
             if (i.title.toString().lowercase().contains(newText!!.lowercase())
-                || i.subTitle.toString().lowercase().contains(newText.lowercase())){
+                ){
                 newList.add(i)
             }
         }
